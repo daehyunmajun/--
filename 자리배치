@@ -1,0 +1,9 @@
+from random import *
+
+자리배치 = []
+for i in range(26):
+    n = randint(1,26)
+    while n in 자리배치:
+        n = randint(1,26)
+    자리배치.append(n)
+print(자리배치)
